@@ -1,0 +1,14 @@
+{
+  "name": "startup_planet",
+  "version": "1.0.0",
+  "description": "a dataset of the world’s most promising startups",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "God'swill Sekav Apya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
