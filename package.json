@@ -4,7 +4,7 @@
   "description": "a dataset of the world’s most promising startups",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node --env-file .env server.js"
   },
   "author": "God'swill Sekav Apya",
   "license": "ISC",
