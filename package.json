@@ -5,7 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node --env-file .env server.js"
+    "start": "node --env-file .env --watch server.js"
   },
   "author": "God'swill Sekav Apya",
   "license": "ISC",

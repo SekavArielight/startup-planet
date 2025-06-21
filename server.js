@@ -43,9 +43,11 @@ app.get("/api", (req, res) => {
   }
 
   res.json(filteredData);
+  console.log(req.query);
 });
 
-// app.get('/api/:country', (req, res) => {
+// app.get('/api/:field/:term', (req, res) => {
+//   const { country, continent, industry } = req.params;
 //   console.log(req.params);
 // });
 
