@@ -45,4 +45,8 @@ app.get("/api", (req, res) => {
   res.json(filteredData);
 });
 
+// app.get('/api/:country', (req, res) => {
+//   console.log(req.params);
+// });
+
 app.listen(port, () => console.log(`server connected on port: ${port}`));
