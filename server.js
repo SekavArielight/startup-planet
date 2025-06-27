@@ -43,12 +43,16 @@ app.get("/api", (req, res) => {
   }
 
   res.json(filteredData);
-  console.log(req.query);
 });
 
-// app.get('/api/:field/:term', (req, res) => {
-//   const { country, continent, industry } = req.params;
-//   console.log(req.params);
-// });
+app.get('/api/:field/:term', (req, res) => {
+  const { field, term } = req.params;
+
+  const filteredData = startups.filter(startup => 
+    startup[field].toLowerCase() === term.toLowerCase()
+  );
+
+  res.json(filteredData);
+});
 
 app.listen(port, () => console.log(`server connected on port: ${port}`));
